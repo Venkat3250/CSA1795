@@ -1,0 +1,40 @@
+r = int(input("Enter the number of rows : "))
+c = int(input("Enter the  umber of columns : "))
+
+m1 = []
+m2 = []
+ma = []
+
+for i in range (r):
+    a = []
+    for j in range (c):
+        a.append(int(input()))
+    m1.append(a)
+
+for i in range (r):
+    for j in range (c):
+        print(m1[i][j] , end = " ")
+    print()
+
+for i in range (r):
+    a = []
+    for j in range (c):
+        a.append(int(input()))
+    m2.append(a)
+
+for i in range (r):
+    for j in range (c):
+        print(m2[i][j] , end = " ")
+    print()
+
+for i in range (r):
+    for j in range (c):
+        a = []
+        for k in range (c):
+            a.append(m1[i][k] + m2[k][j])
+         ma.append(a)
+
+for i in range (r):
+    for j in range (c):
+        print(ma[i][j] , end = " ") 
+    print()
